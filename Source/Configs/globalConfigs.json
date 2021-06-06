@@ -1,7 +1,7 @@
 {
     "api-url": "https://viacep.com.br/ws/{0}/json/",
     "configs": {
-        "server-port": 3000
+        "server-port": 80
     },
     "messages": {
         "error": {
