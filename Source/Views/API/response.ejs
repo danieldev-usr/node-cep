@@ -1,0 +1,58 @@
+<%- include('../Include/default-header.ejs') %>
+
+<form>
+    <div class="__responseform">
+        <div class="__responseform_content">
+            <label>
+                <p>CEP:</p>
+                <input value="<%= typeof response_cep != "undefined" ? response_cep : "Não encontrado" %>" disabled>
+            </label>
+            <label>
+                <p>Logradouro:</p>
+                <input value="<%= typeof response_logradouro != "undefined" ? response_logradouro : "Não encontrado" %>" disabled>
+            </label>
+            <label>
+                <p>Complemento:</p>
+                <input value="<%= (response_complemento.length > 1) ? response_complemento : "Não Encontrado" %>" disabled>
+            </label>
+        </div>
+        <div class="__responseform_content">
+            <label>
+                <p>Bairro:</p>
+                <input value="<%= typeof response_bairro != "undefined" ? response_bairro : "Não encontrado" %>" disabled>
+            </label>
+            <label>
+                <p>Cidade:</p>
+                <input value="<%= typeof response_localidade != "undefined" ? response_localidade : "Não encontrado" %>" disabled>
+            </label>
+            <label>
+                <p>UF:</p>
+                <input value="<%= typeof response_uf != "undefined" ? response_uf : "Não encontrado" %>" disabled>
+            </label>
+        </div>
+        <div class="__responseform_content">
+            <label>
+                <p>IBGE:</p>
+                <input value="<%= typeof response_ibge != "undefined" ? response_ibge : "Não encontrado" %>" disabled>
+            </label>
+            <label>
+                <p>GIA:</p>
+                <input value="<%= typeof response_gia != "undefined" ? response_gia : "Não encontrado" %>" disabled>
+            </label>
+            <label>
+                <p>DDD:</p>
+                <input value="<%= typeof response_ddd != "undefined" ? response_ddd : "Não encontrado" %>" disabled>
+            </label>
+        </div>
+        
+        <div class="__responseform_content">
+            <label>
+                <p>SIAFI:</p>
+                <input value="<%= typeof response_siafi != "undefined" ? response_siafi : "Não encontrado" %>" disabled>
+            </label>
+        </div>
+    </div>
+</form>
+<button onclick="history.back(1)" type="button" class="btn btn-success __button">Retornar ao menu</button>
+
+<%- include('../Include/default-footer.ejs') %>

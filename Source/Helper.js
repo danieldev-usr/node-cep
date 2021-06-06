@@ -1,5 +1,5 @@
-exports.pageTitle = "Aguiar Security"
+exports.pageTitle = "Node-CEP"
 
-exports.navigationMenu = [
-    {displayName: 'Home', url:'/home/'}
+exports.navMenu = [
+    {displayName: 'Consultar', url: '/consulta/'}
 ]

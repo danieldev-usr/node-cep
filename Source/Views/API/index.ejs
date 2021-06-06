@@ -1,0 +1,16 @@
+<%- include('../Include/default-header.ejs') %>
+
+
+<form method="POST">
+  <div class="__form">
+    <%- include('../Include/default-alerts.ejs') %>
+    <div class="mb-3">
+      <label for="cepMain" class="form-label">CEP</label>
+      <input type="text" class="form-control" name="cep" id="cepMain" placeholder="00000-000">
+    </div>
+    <button type="submit" class="btn btn-success">Consultar</button>
+  </div>
+</form>
+
+
+<%- include('../Include/default-footer.ejs') %>

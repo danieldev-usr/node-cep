@@ -1,0 +1,29 @@
+{
+  "name": "node-cep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "string-format": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "run": "nodemon Source/Server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aguiar-security/node-cep.git"
+  },
+  "author": "aguiar-security",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aguiar-security/node-cep/issues"
+  },
+  "homepage": "https://github.com/aguiar-security/node-cep#readme"
+}
