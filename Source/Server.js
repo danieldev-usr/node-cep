@@ -2,7 +2,7 @@ const Global = require('./Configs/globalConfigs.json');
 
 const App = require('./App');
 
-App.set("port", Global.configs['server-port'] || 80);
+App.set("port", Global.configs['server-port'] || 3000);
 
 const Server = App.listen(App.get("port"), () => {
     var Server_Host = (Server.address().address || '127.0.0.1');
